@@ -1816,3 +1816,6 @@ nginx代码
 ```js
 $.extend({})
 ```
+## git简写配置
+
+- [git简写配置](https://www.cnblogs.com/mamaguai/p/8081826.html)
