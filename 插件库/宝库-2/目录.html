@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>前端25期</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;  
+  }
+  h3{
+    text-align: center;
+    margin:20px;
+  }
+  table{
+  width: 100%;
+  text-align: center;
+  border-collapse:collapse;
+  border:1px solid #ccc;
+  }
+  th{
+  /* width:15%; */
+  border-collapse:collapse;
+  border:1px solid #ccc;
+  }
+  th:last-child{
+    padding:10px;
+  }
+  td{
+  border-collapse:collapse;
+  border:1px solid #ccc;
+  padding:10px;
+  text-align: left;
+  }
+  a,a:hover{
+    color:rgba(56, 206, 174, 0.856);
+    text-decoration: none;
+    border:1px solid rgba(10, 202, 42, 0.801);
+    border-radius:5px;
+  }
+</style>
+<body>
+  <h3>00-依赖jQ的小插件<a href="http://www.jq22.com/">jQ插件库官网</a>
+  </h3>
+  <table>
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>插件名称</th>
+        <th>参考网站</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>jQuery.lazyload</td>
+        <td>
+          <a href="http://plugins.jquery.com/lazyload">懒加载详解及版本下载</a><br>
+          <a href="https://appelsiini.net">懒加载英文官网-demo示例</a>
+        </td>
+        <td>延迟加载长网页中的图像。在用户滚动到视口之前，视口外部的图像不会被加载。</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>jQuery.cookie</td>
+        <td>
+            <a href="http://plugins.jquery.com/cookie/">jQuery.cookie官网</a><br>
+        </td>
+        <td>用于读取，写入和删除cookie。</td>
+      </tr>
+      <tr>
+          <td>03</td>
+          <td>jQuery.moment</td>
+          <td>
+            <a href="http://momentjs.com">时间日期格式化moment英文官网</a><br>
+            <a href="http://momentjs.cn">时间日期格式化moment中文官网</a><br>
+          </td>
+          <td>JavaScript 日期处理类库</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>jquery.pagination</td>
+        <td>
+          <a href="http://plugins.jquery.com/paging/">pagination官网</a><br>
+        </td>
+        <td>jQuery分页插件</td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>jquery.color</td>
+        <td>
+          <a href="http://code.jquery.com/color/">jquery.color官网</a><br>
+        </td>
+        <td>JavaScript 颜色过渡</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>jquery.ui</td>
+        <td>
+          <a href="https://jqueryui.com/">用户界面交互</a><br>
+          <a href="https://jqueryui.com/easing/">用户界面交互-easing动画效果</a>
+        </td>
+        <td>用户界面交互、效果、小部件和主题的集合。</td>
+      </tr>
+      <tr>
+        <td>07</td>
+        <td>fullpage</td>
+        <td>
+          <a href="https://www.alvarotrigo.com/fullPage/">fullpage英文官网</a><br>
+          <a href="http://www.dowebok.com/demo/2014/77/">fullpage中文官网</a>
+        </td>
+        <td>全屏滚动</td>
+      </tr>
+      <tr>
+          <td>08</td>
+          <td>require.js</td>
+          <td>
+            <a href="https://requirejs.org/">require.js官网</a>
+          </td>
+          <td>JavaScript文件和模块加载器</td>
+      </tr>
+      <tr>
+          <td>09</td>
+          <td>bootstrap</td>
+          <td>
+            <a href="https://getbootstrap.com/2.3.2/">bootstrap英文官网</a><br>
+            <a href="http://www.bootcss.com/">bootstrap中文官网</a>
+          </td>
+          <td>
+            实现响应式布局-框架<br>
+            如需兼容IE6-8 需配合Respond.js使用<br>
+            <a href="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">Respond.js代码在线网址</a><br>
+            <a href="https://www.cnblogs.com/w10234/p/5602440.html">Respond.js作用-南无-博客园</a><br>
+            <a href="https://github.com/scottjehl/Respond">Respond.js　github地址</a><br>
+              引入的写法需要放在注释标签内,请查看网页源代码<br>
+              <!--[if lt IE 9]>    //判断当前浏览器的版本是否小于IE 9
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <!--[endif]-->
+          </td>
+      </tr>
+      <tr>
+        <td>09-1</td>
+        <td>bootstrap-paginator</td>
+        <td>
+          <a href="http://plugins.jquery.com/bootstrap-paginator/">在线下载地址</a><br>
+          <a href="https://github.com/lyonlai/bootstrap-paginator">github地址</a><br>
+          <a href="https://www.cnblogs.com/hqlong/p/6667766.html">在线api-博客园</a>
+        </td>
+        <td>
+          基于bootstrap的分页插件 <br>
+          注意：分页样式用BootStrap,<br>
+          如果单独使用,请去BootStrap中把分页样式拷出来;<br>
+          jQuery版本需要1.8及以上;
+
+        </td>
+      </tr>
+      <tr>
+        <td>09-02</td>
+        <td>bootstrap-validator</td>
+        <td>
+          <a href="https://blog.csdn.net/nazhidao/article/details/51542508">参考文档-中文01</a><br>
+          <a href="http://blog.csdn.net/u013938465/article/details/53507109">参考文档-中文02</a><br>
+          <a href="http://www.cnblogs.com/v-weiwang/p/4834672.html?ptvd">参考文档-中文03</a><br>
+          <a href="http://bootstrapvalidator.votintsev.ru">参考文档-英文</a>
+        </td>
+        <td>基于bootstrap的表单验证插件</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>jquery-fileupload</td>
+        <td>
+          <a href="https://github.com/blueimp/jQuery-File-Upload">github地址</a><br>
+          <a href="http://www.jq22.com/jquery-info230">中文文档</a><br>
+          <a href="http://plugins.jquery.com/blueimp-file-upload/">英文文档及在线下载地址</a><br>
+          <a href="https://www.cnblogs.com/jinzhao/p/5914211.html">配置-限制上传文件大小和类型</a>
+        </td>
+        <td>
+            文件上传小工具<br>
+            包含多个文件选择,拖放支持,进度条,验证和预览图像,jQuery的音频和视频;<br>
+            支持跨域,分块和可恢复文件上传以及客户端图像大小调整;<br>
+            适用于支持标准HTML表单文件上载的任何服务器端平台<br>
+            (PHP，Python，Ruby on Rails，Java，Node.js，Go等);<br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>常用插件汇总</h3>
+  <table >
+    <thead>
+      <tr>
+        <th>序号</th>  
+        <th>插件名称</th>
+        <th>参考网站</th>
+        <th>别名</th>
+        <th>描述</th>   
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>jQuery</td>
+        <td><a href="http://jquery.cuishifeng.cn">jQuery中文手册</a><br>
+          <a href="http://jquery.com">jQuery英文官网</a></td>
+        <td>js库</td>
+        <td>
+          1.X版 :功能丰富,主要用来兼容ie低版本<br>
+          2.X版 :功能丰富,不兼容ie低版本,和1.X版本功能一样;(学习用)<br>
+          3.X版 :功能丰富,不兼容ie低版本,和2.X版本上更新的,新增api<br>
+          依赖jQ的其他小插件<br>
+          jQuery.color 支持让animate做颜色的动画<br>
+          jquery.pagination分页插件<br>
+        </td>
+      </tr>
+      <tr>
+          <td>02</td>
+          <td>art-template</td>
+          <td><a href="http://aui.github.io/art-template/zh-cn/">art-template</a></td>
+          <td>模板引擎</td>
+          <td>无</td>
+      </tr>
+      <tr>
+          <td>03</td>
+          <td>wangEditor</td>
+          <td><a href="www.wangeditor.com">wangEditor</a></td>
+          <td>富文本编辑器</td>
+          <td>无</td>
+      </tr>
+      <tr>
+          <td>04</td>
+          <td>font-awesome</td>
+          <td>
+            <a href="http://www.fontawesome.com.cn/">字体图标库-中文</a>
+            <br>
+            <a href="https://fontawesome.com">字体图标库-英文</a>
+          </td>
+          <td>字体图标</td>
+          <td>无</td>
+      </tr>
+      <tr>
+          <td>05</td>
+          <td>Animate-css动画库</td>
+          <td>
+            <a href="https://www.awesomes.cn/repo/daneden/animate-css">动画库-中文01</a><br>
+            <a href="https://www.drupal.org/project/animate_css">动画库-英文</a><br>
+            <a href="https://daneden.github.io/animate.css/">在线demo演示</a><br>
+            <a href="http://www.dowebok.com/98.html">动画库-dowebok-自春春</a>
+          </td>
+          <td>css动画库</td>
+          <td>无</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>html5shiv</td>
+        <td>无</td>
+        <td>无</td>
+        <td>
+          让IE6-8支持兼容html5语义化标签的js文件<br>
+          head处引入<br>
+          引入的写法需要放在注释标签内,请查看网页源代码
+          <!-- 小于等于 ie 8 才进行引包, 用于兼容 html5 语义化标签 -->
+          <!--[if lte IE 8]>
+            <script src="./html5shiv.js"></script>
+          <![endif]-->
+        </td>
+      </tr>
+      <tr>
+        <td>07</td>
+        <td>echarts</td>
+        <td>
+          <a href="http://echarts.baidu.com/">canvas插件官网</a><br>
+          <a href="http://echarts.baidu.com/echarts2/doc/example.html">canvas.example</a>
+        </td>
+        <td>canvas绘图插件</td>
+        <td>无</td>
+      </tr>
+      <tr>
+        <td>08</td>
+        <td>Highcharts</td>
+        <td>无</td>
+        <td>绘图插件</td>
+        <td>Highcharts可兼容ie6</td>
+      </tr>
+      <tr>
+        <td>09</td>
+        <td>swiper</td>
+        <td>
+          <a href="https://www.swiper.com.cn/">swiper中文网</a><br>
+          <a href="http://idangero.us/swiper/">swiper英文网</a>
+        </td>
+        <td>轮播图插件</td>
+        <td>无</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>iscroll</td>
+        <td>
+          <a href="https://iiunknown.gitbooks.io/iscroll-5-api-cn/content/">iScroll 5 API 中文版-自春春</a><br>
+          <a href="https://github.com/cubiq/iscroll/">github参考</a><br>
+          <a href="https://www.npmjs.com/package/iscroll">npm参考</a><br>
+          <a href="http://wiki.jikexueyuan.com/project/iscroll-5/">iScroll-5 API 中文版-极客学院</a><br>
+          <a href="http://www.cnblogs.com/duanhuajian/archive/2013/04/08/3008323.html">入门用法介绍01</a><br>
+          <a href="http://www.cnblogs.com/asqq/archive/2012/04/23/2466132.html">入门用法介绍02</a><br>
+          <a href="https://cdnjs.com/libraries/iScroll">iscroll各版本下载5.0.0~5.2.0</a>
+        </td>
+        <td>区域滚动</td>
+        <td>无</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>zepto</td>
+        <td>
+          <a href="http://www.css88.com/doc/zeptojs_api/">在线文档</a><br>
+          <a href="https://zeptojs.com/">英文文档</a>
+        </td>
+        <td>js库</td>
+        <td>
+          主要模块介绍<br>
+            zepto---核心模块；包含许多方法<br>
+            event---通过on()& off()处理事件<br>
+            ajax---XMLHttpRequest 和 JSONP 实用功能<br>
+            form---序列化 & 提交web表单<br>
+            ie---增加支持桌面的Internet Explorer 10+和Windows Phone 8<br>
+            selector---实验性的支持 jQuery CSS 表达式 实用功能，比如 $('div:first')和 el.is(':visible') <br>
+            touch---在触摸设备上触发tap– 和 swipe– 相关事件。<br>
+            　　　　这适用于所有的`touch`(iOS, Android)和`pointer`事件(Windows Phone)。<br>
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>nprogress</td>
+        <td>
+          <a href="http://ricostacruz.com/nprogress/">官网</a><br>
+          <a href="http://blog.csdn.net/joyhen/article/details/24458427">参考文档</a><br>
+          <a href="https://github.com/rstacruz/nprogress">github地址</a>
+        </td>
+        <td>进度条插件</td>
+        <td>纳米级进度条</td>
+      </tr>
+        
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>手册目录</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>名称</th>
+        <th>参考网站</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>W3CSchool</td>
+        <td>
+          <a href="http://www.w3school.com.cn/">W3C官网</a><br>
+          <a href="http://css.doyoe.com/">离线包的在线版</a>
+        </td>
+        <td>web标准化</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>CSS</td>
+        <td>
+          <a href="http://www.w3school.com.cn/cssref/index.asp">CSS在线手册--W3C</a>
+        </td>
+        <td>离线包版本v4.2.3</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>JavaScript</td>
+        <td>
+          <a href="http://www.w3school.com.cn/jsref/index.asp">JavaScript在线手册--W3C</a>
+        </td>
+        <td>JavaScript核心参考手册</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>jQuery</td>
+        <td>
+          <a href="http://www.w3school.com.cn/jquery/jquery_reference.asp">jQuery在线手册--W3C</a><br>
+          <a href="https://www.jb51.net/shouce/jquery1.82/">jQuery在线手册--脚本之家</a>
+        </td>
+        <td>jQuery使用api</td>
+      </tr>
+      <tr>
+        <td>04-01</td>
+        <td>jQuery UI AJAX</td>
+        <td>
+          <a href="http://www.runoob.com/jqueryui/jqueryui-api.html">JQuery之UI--菜鸟教程</a><br>
+          <a href="http://www.jqueryui.org.cn/tutorial/27.html">JQuery之UI--官网教程</a><br>
+          <a href="http://www.w3school.com.cn/jquery/jquery_ref_ajax.asp">JQuery之AJAX--W3C</a><br>
+          <a href="http://www.runoob.com/jquery/jquery-ref-ajax.html">JQuery之AJAX--菜鸟教程</a>
+        </td>
+        <td>
+          JQuery之UI <br>
+          jQuery之AJAX
+        </td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>php</td>
+        <td>
+          <a href="http://www.w3school.com.cn/php/php_ref.asp">php在线手册--W3C</a><br>
+          <a href="http://www.runoob.com/php/php-tutorial.html">php在线手册--菜鸟教程</a><br>
+          <a href="http://www.php.cn/">php中文网</a><br>
+          <a href="http://php.freehostingguru.com/">php完全中文手册</a><br>
+          <a href="http://php.net/">php英文官网</a><br>
+        </td>
+        <td>php使用api</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>manual</td>
+        <td>无</td>
+        <td>配置phpStudy的手册</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<script>
+  var a = document.getElementsByTagName('a');
+  [].forEach.call(a,function(v,i){
+    v.target="_blank";
+  })
+</script>
+</html>

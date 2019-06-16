@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="box" style="width: 600px;height:400px; border: 1px solid #000;"></div>
+
+    <!-- 1-引包 -->
+    <script src="echarts.min.js"></script>
+    
+    <script>
+        //创建图表
+        //1-创建一个echarts实例
+        var myChart = echarts.init(document.getElementById('box'));
+        //2-准备图表单的数据
+        //以上都是春哥虚拟的数据，不要当真哦！
+        var option = {
+                title : {
+                    text: '传智人数分布',
+                    subtext: '好像是真的',
+                    x:'right'
+                },
+                tooltip : {  //提示工具
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c}--- ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    data: ['大前端','UI设计','JAVA','python','PHP']
+                },
+                series : [
+                    {
+                        name: '访问来源',
+                        type: 'pie',
+                        radius : '75%', // 圆直径 
+                        center: ['50%', '50%'],
+                        data:[
+                            {value:335, name:'大前端'},
+                            {value:310, name:'UI设计'},
+                            {value:234, name:'JAVA'},
+                            {value:135, name:'python'},
+                            {value:1548, name:'PHP'}
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 100,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(255, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+
+        //3-将数据传递给echart实例，生成图表
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

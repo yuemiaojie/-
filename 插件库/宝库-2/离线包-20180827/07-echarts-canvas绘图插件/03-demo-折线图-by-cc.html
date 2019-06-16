@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="box" style="width: 600px;height:400px; border: 1px solid red;"></div>
+    <script src="echarts.min.js"></script>
+    <script>
+        //初始化
+        //1- 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('box'));
+
+        //2-设置图表的配置项
+        var option = {
+            //标题
+            title:{
+                text: '前端24期体重荣耀榜',
+                // show: false
+            },
+            //图例
+            legend:{
+                data:['体重','颜值']
+            },
+            //提示工具
+            tooltip: {
+                trigger: 'axis'
+            },
+            //x轴
+            xAxis:{
+                data: ['第一组', '第二组', '第三组', '第四组', '第五组']
+            },
+            //y轴 一般不用配置，会根据数据自动生成
+            yAxis:{},
+            //图片的核心数据
+            series: [{
+                name:'体重',
+                type: 'line', //line 折线图  bar 柱状图  pie 饼图
+                data: [1000, 800, 1200, 2000, 1500]
+            },{
+                name: '颜值',
+                type: 'bar',
+                data: [2000, 999, 500, 600, 666]
+            }]
+        };
+
+        //3-让图表根据配置项 生成图标
+        myChart.setOption(option);
+
+    </script>
+</body>
+</html>

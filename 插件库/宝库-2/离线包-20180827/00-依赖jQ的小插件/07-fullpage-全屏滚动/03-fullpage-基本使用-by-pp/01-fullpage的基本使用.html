@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/jquery.fullPage.css">
+</head>
+<body>
+
+<!--
+  fullpage的基本使用
+  1. 引包
+  2. 准备结构
+  3. 进行初始化
+-->
+
+<!-- 准备结构 -->
+<!-- section类 表示一屏 -->
+<!-- 给 section 盒子加上 active 类可以配置默认显示第几屏, 一般用于测试 -->
+<div class="box">
+  <div class="section">1</div>
+  <div class="section">2</div>
+  <div class="section">
+    <div class="slide">横向的第1屏</div>
+    <div class="slide">横向的第2屏</div>
+    <div class="slide">横向的第3屏</div>
+    <div class="slide">横向的第4屏</div>
+  </div>
+  <div class="section">4</div>
+  <div class="section">5</div>
+</div>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.fullPage.min.js"></script>
+<script>
+  $(function() {
+    // 初始化
+    $('.box').fullpage({
+      // 配置每一个屏幕的颜色
+      sectionsColor: ['pink', 'skyblue', 'green', 'gray', 'yellow'],
+      // 配置垂直不进行居中显示
+      verticalCentered: false,
+      // 配置小圆点
+      navigation: true
+    });
+
+  })
+
+</script>
+
+
+</body>
+</html>

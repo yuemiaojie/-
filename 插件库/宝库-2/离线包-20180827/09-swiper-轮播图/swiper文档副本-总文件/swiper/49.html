@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>freeModeMomentumBounceRatio_Swiperä¸­æ–‡ç½‘</title>
+<meta name="keywords" content="freeModeMomentumBounceRatio,Swiper,option,é€‰é¡¹,css3,html5,å‰ç«¯å¼€å‘,ç§»åŠ¨äº’è”ç½‘" />
+<meta name="description" content="å€¼è¶Šå¤§äº§ç”Ÿçš„è¾¹ç•Œåå¼¹æ•ˆæœè¶Šæ˜æ˜¾ï¼Œåå¼¹è·ç¦»è¶Šå¤§ã€‚" />
+<link href="swiper.min.css" tppabs="http://www.swiper.com.cn/dist/css/swiper.min.css" rel="stylesheet" type="text/css" />
+<script src="jquery-1.10.1.min.js" tppabs="http://www.swiper.com.cn/templets/default/js/jquery-1.10.1.min.js"></script> 
+<script src="swiper.min.js" tppabs="http://www.swiper.com.cn/dist/js/swiper.min.js"></script> 
+<link href="base.css" tppabs="http://www.swiper.com.cn/templets/default/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="layout.css" tppabs="http://www.swiper.com.cn/templets/default/style/layout.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="highlight.css" tppabs="http://www.swiper.com.cn/templets/default/style/highlight.css">
+<link rel="stylesheet" href="xcode.css" tppabs="http://www.swiper.com.cn/templets/default/style/xcode.css">
+<script src="highlight.pack.js" tppabs="http://www.swiper.com.cn/templets/default/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="shortcut icon" href="/templets/default/images/favicon.png"/>
+</head>
+<body>
+
+<div id="header"><div class="inner">
+<ul id="nav">
+<li id="logo"><a href="javascript:if(confirm('http://www.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/'" tppabs="http://www.swiper.com.cn/"><img alt="Swiperä¸­æ–‡ç½‘" title="Swiperä¸­æ–‡ç½‘" src="logo.png" tppabs="http://www.swiper.com.cn/templets/default/images/logo.png" width="82" height="50"></a></li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/'" tppabs="http://www.swiper.com.cn/">é¦–é¡µ</a></li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">åœ¨çº¿æ¼”ç¤º</a> <b></b>
+<ul>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/demo/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/demo/index.html'" tppabs="http://www.swiper.com.cn/demo/index.html">SwiperåŸºç¡€æ¼”ç¤º</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/demo/senior/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/demo/senior/index.html'" tppabs="http://www.swiper.com.cn/demo/senior/index.html">Swiperç²¾å½©åº”ç”¨ï¼ˆç§»åŠ¨ï¼‰</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/demo/web/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/demo/web/index.html'" tppabs="http://www.swiper.com.cn/demo/web/index.html">Swiperç²¾å½©åº”ç”¨ï¼ˆPCï¼‰</a> </li>
+</ul>
+</li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">ä¸­æ–‡æ•™ç¨‹</a>  <b></b>
+<ul>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/usage/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/usage/index.html'" tppabs="http://www.swiper.com.cn/usage/index.html">Swiperä½¿ç”¨æ–¹æ³•</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/usage/animate/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/usage/animate/index.html'" tppabs="http://www.swiper.com.cn/usage/animate/index.html">Swiper Animateä½¿ç”¨æ–¹æ³•</a> </li>
+</ul>
+</li>
+<li><a href="index.html" tppabs="http://www.swiper.com.cn/api/index.html">API æ–‡æ¡£</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/download/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/download/index.html'" tppabs="http://www.swiper.com.cn/download/index.html">ä¸‹è½½Swiper</a>  </li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">å…³äºæˆ‘ä»¬</a>  <b></b>
+<ul>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/about/us/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/us/index.html'" tppabs="http://www.swiper.com.cn/about/us/index.html">å…³äºSwiper</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/about/contact/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/contact/index.html'" tppabs="http://www.swiper.com.cn/about/contact/index.html">è”ç³»æˆ‘ä»¬/åŠ ç¾¤è®¨è®º</a> </li>
+<li><a href="javascript:if(confirm('http://www.swiper.com.cn/about/link/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/link/index.html'" tppabs="http://www.swiper.com.cn/about/link/index.html">åˆä½œä¼™ä¼´</a> </li>
+</ul>
+</li>
+
+<li class="tobbs"><a href="javascript:if(confirm('http://bbs.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://bbs.swiper.com.cn/'" tppabs="http://bbs.swiper.com.cn/" target="_blank">äº¤æµã€åˆ†äº«</a></li>
+<li><a href="javascript:if(confirm('http://2.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://2.swiper.com.cn/'" tppabs="http://2.swiper.com.cn/" target="_blank">å›é¡¾Swiper2</a></li>
+<li><a href="#"  target="_blank"  onclick="javascript:window.open('http://www.idangero.us/swiper/');return false;">Swiperè‹±æ–‡ç½‘</a></li>
+</ul>
+<div class="search" id="search">
+      <form  name="formsearch" action="http://www.swiper.com.cn/plus/search.php">
+        <div class="form">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="æœç´¢å‚æ•°" onfocus="if(this.value=='æœç´¢å‚æ•°'){this.value='';}"  onblur="if(this.value==''){this.value='æœç´¢å‚æ•°';}" />
+          <button type="submit" class="search-submit">æœç´¢</button>
+        </div>
+        </form>
+        
+    </div>
+</div></div>
+<div class="full">
+<div id="api">
+<div id="aside">
+
+<div class="shadow">
+<div class="top">
+<h2>é…ç½®é€‰é¡¹</h2>
+<p><span>Swiper3.x</span>çš„å…¨éƒ¨é…ç½®é€‰é¡¹ã€æ–¹æ³•ã€å‡½æ•°</p>
+</div>
+<dl>
+<dt><a href="#">Swiperåˆå§‹åŒ–</a></dt>
+<dd class='article140'><a class="option" href="140.html" tppabs="http://www.swiper.com.cn/api/start/2014/1218/140.html">new Swiper(swiperContainer, parameters)</a></dd>
+</dl>
+<dl>
+<dt><a href="#">Basicï¼ˆSwiperä¸€èˆ¬é€‰é¡¹ï¼‰</a></dt>
+<dd class='article42'><a class="option" href="42.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1217/42.html">initialSlide</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd><dd class='article21'><a class="option" href="21.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1215/21.html">direction</a><span class="value">:<span class='hljs-string'><q>horizontal</q></span></span></dd><dd class='article17'><a class="option" href="17.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1213/17.html">speed</a><span class="value">:<span class='hljs-number'><q>300</q></span></span></dd><dd class='article16'><a class="option" href="16.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1213/16.html">autoplay</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd><dd class='article19'><a class="option" href="19.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1215/19.html">autoplayDisableOnInteraction</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article295'><a class="option" href="295.html" tppabs="http://www.swiper.com.cn/api/basic/2016/0125/295.html">autoplayStopOnLast</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article59'><a class="option" href="59.html" tppabs="http://www.swiper.com.cn/api/basic/2014/1217/59.html">grabCursor</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article197'><a class="option" href="197.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0308/197.html">parallax</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article211'><a class="option" href="211.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0308/211.html">hashnav</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article318'><a class="option" href="318.html" tppabs="http://www.swiper.com.cn/api/basic/2016/1030/318.html">hashnavWatchState</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article317'><a class="option" href="317.html" tppabs="http://www.swiper.com.cn/api/basic/2016/1029/317.html">history</a><span class="value">:<span class='hljs-string'><q> </q></span></span></dd><dd class='article319'><a class="option" href="319.html" tppabs="http://www.swiper.com.cn/api/basic/2016/1030/319.html">replaceState</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article263'><a class="option" href="263.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0327/263.html">setWrapperSize</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article264'><a class="option" href="264.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0328/264.html">virtualTranslate</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article268'><a class="option" href="268.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0328/268.html">a11y</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article274'><a class="option" href="274.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0427/274.html">width</a><span class="value">:<span class='hljs-number'><q></q></span></span></dd><dd class='article275'><a class="option" href="275.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0427/275.html">height</a><span class="value">:<span class='hljs-number'><q></q></span></span></dd><dd class='article281'><a class="option" href="281.html" tppabs="http://www.swiper.com.cn/api/basic/2015/0722/281.html">roundLengths</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article289'><a class="option" href="289.html" tppabs="http://www.swiper.com.cn/api/basic/2015/1111/289.html">breakpoints</a><span class="value">:<span class='hljs-string'><q></q></span></span></dd><dd class='article294'><a class="option" href="294.html" tppabs="http://www.swiper.com.cn/api/basic/2015/1127/294.html">autoHeight</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article309'><a class="option" href="309.html" tppabs="http://www.swiper.com.cn/api/basic/2016/0607/309.html">nested</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Progressï¼ˆè¿›åº¦ï¼‰</a></dt>
+<dd class='article191'><a class="option" href="191.html" tppabs="http://www.swiper.com.cn/api/Progress/2015/0308/191.html">watchSlidesProgress</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article192'><a class="option" href="192.html" tppabs="http://www.swiper.com.cn/api/Progress/2015/0308/192.html">watchSlidesVisibility</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Free Mode ï¼ˆfreeæ¨¡å¼/æŠµæŠ—åå¼¹ï¼‰</a></dt>
+<dd class='article44'><a class="option" href="44.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/44.html">freeMode</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article45'><a class="option" href="45.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/45.html">freeModeMomentum</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article47'><a class="option" href="47.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/47.html">freeModeMomentumRatio</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article324'><a class="option" href="324.html" tppabs="http://www.swiper.com.cn/api/freemode/2016/1106/324.html">freeModeMomentumVelocityRatio</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article48'><a class="option" href="48.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/48.html">freeModeMomentumBounce</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article49'><a class="option" href="49.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/49.html">freeModeMomentumBounceRatio</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article276'><a class="option" href="276.html" tppabs="http://www.swiper.com.cn/api/freemode/2015/0506/276.html">freeModeSticky</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+
+<dl>
+<dt><a href="#">Slides grid  (ç½‘æ ¼åˆ†å¸ƒ)</a></dt>
+<dd class='article50'><a class="option" href="50.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2014/1217/50.html">centeredSlides</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article24'><a class="option" href="24.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2014/1215/24.html">slidesPerView</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article27'><a class="option" href="27.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2014/1217/27.html">slidesPerGroup</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article198'><a class="option" href="198.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2015/0308/198.html">spaceBetween</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd><dd class='article199'><a class="option" href="199.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2015/0308/199.html">slidesPerColumn</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article200'><a class="option" href="200.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2015/0308/200.html">slidesPerColumnFill</a><span class="value">:<span class='hljs-string'><q>column</q></span></span></dd><dd class='article282'><a class="option" href="282.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2015/0722/282.html">slidesOffsetBefore</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd><dd class='article283'><a class="option" href="283.html" tppabs="http://www.swiper.com.cn/api/Slides_grid/2015/0722/283.html">slidesOffsetAfter</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Effects  (åˆ‡æ¢æ•ˆæœ)</a></dt>
+<dd class='article193'><a class="option" href="193.html" tppabs="http://www.swiper.com.cn/api/Effects/2015/0308/193.html">effect</a><span class="value">:<span class='hljs-string'><q>slide</q></span></span></dd><dd class='article194'><a class="option" href="194.html" tppabs="http://www.swiper.com.cn/api/Effects/2015/0308/194.html">fade</a><span class="value">:<span class='hljs-string'><q></q></span></span></dd><dd class='article195'><a class="option" href="195.html" tppabs="http://www.swiper.com.cn/api/Effects/2015/0308/195.html">cube</a><span class="value">:<span class='hljs-string'><q></q></span></span></dd><dd class='article196'><a class="option" href="196.html" tppabs="http://www.swiper.com.cn/api/Effects/2015/0308/196.html">coverflow</a><span class="value">:<span class='hljs-string'><q></q></span></span></dd><dd class='article298'><a class="option" href="298.html" tppabs="http://www.swiper.com.cn/api/Effects/2016/0126/298.html">flip</a><span class="value">:<span class='hljs-string'><q></q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Clicks  (ç‚¹å‡»)</a></dt>
+<dd class='article40'><a class="option" href="40.html" tppabs="http://www.swiper.com.cn/api/Clicks/2014/1217/40.html">preventClicks</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article41'><a class="option" href="41.html" tppabs="http://www.swiper.com.cn/api/Clicks/2014/1217/41.html">preventClicksPropagation</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article207'><a class="option" href="207.html" tppabs="http://www.swiper.com.cn/api/Clicks/2015/0308/207.html">slideToClickedSlide</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+
+
+<dl>
+<dt><a href="#">Touches(è§¦å‘æ¡ä»¶)</a></dt>
+<dd class='article55'><a class="option" href="55.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/55.html">touchRatio</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article56'><a class="option" href="56.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/56.html">simulateTouch</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article57'><a class="option" href="57.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/57.html">onlyExternal</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article58'><a class="option" href="58.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/58.html">followFinger</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article60'><a class="option" href="60.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/60.html">shortSwipes</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article61'><a class="option" href="61.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/61.html">longSwipesRatio</a><span class="value">:<span class='hljs-number'><q>0.5</q></span></span></dd><dd class='article62'><a class="option" href="62.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/62.html">threshold</a><span class="value">:<span class='hljs-number'><q>false</q></span></span></dd><dd class='article201'><a class="option" href="201.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0308/201.html">touchAngle</a><span class="value">:<span class='hljs-number'><q>45</q></span></span></dd><dd class='article202'><a class="option" href="202.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0308/202.html">longSwipes</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article203'><a class="option" href="203.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0308/203.html">longSwipesMs</a><span class="value">:<span class='hljs-number'><q>300</q></span></span></dd><dd class='article204'><a class="option" href="204.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0308/204.html">touchMoveStopPropagation</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article38'><a class="option" href="38.html" tppabs="http://www.swiper.com.cn/api/touch/2014/1217/38.html">resistance</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article205'><a class="option" href="205.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0308/205.html">resistanceRatio</a><span class="value">:<span class='hljs-number'><q>0.85</q></span></span></dd><dd class='article285'><a class="option" href="285.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0826/285.html">iOSEdgeSwipeDetection</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article286'><a class="option" href="286.html" tppabs="http://www.swiper.com.cn/api/touch/2015/0826/286.html">iOSEdgeSwipeThreshold</a><span class="value">:<span class='hljs-number'><q>20</q></span></span></dd><dd class='article323'><a class="option" href="323.html" tppabs="http://www.swiper.com.cn/api/touch/2016/1106/323.html">passiveListeners</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article327'><a class="option" href="327.html" tppabs="http://www.swiper.com.cn/api/touch/2016/1106/327.html">touchReleaseOnEdges</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Swiping / No swiping(ç¦æ­¢åˆ‡æ¢)</a></dt>
+<dd class='article39'><a class="option" href="39.html" tppabs="http://www.swiper.com.cn/api/Swiping/2014/1217/39.html">noSwiping</a><span class="value namespace">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article77'><a class="option" href="77.html" tppabs="http://www.swiper.com.cn/api/Swiping/2014/1217/77.html">noSwipingClass</a><span class="value namespace">:<span class='hljs-string'><q>swiper-no-swiping</q></span></span></dd><dd class='article63'><a class="option" href="63.html" tppabs="http://www.swiper.com.cn/api/Swiping/2014/1217/63.html">allowSwipeToNext</a><span class="value namespace">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article64'><a class="option" href="64.html" tppabs="http://www.swiper.com.cn/api/Swiping/2014/1217/64.html">allowSwipeToPrev</a><span class="value namespace">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article208'><a class="option" href="208.html" tppabs="http://www.swiper.com.cn/api/Swiping/2015/0308/208.html">swipeHandler</a><span class="value namespace">:<span class='hljs-string'><q>null</q></span></span></dd></dl>
+ 
+ <dl>
+<dt><a href="#">Paginationï¼ˆåˆ†é¡µå™¨ï¼‰</a></dt>
+<dd class='article68'><a class="option" href="68.html" tppabs="http://www.swiper.com.cn/api/pagination/2014/1217/68.html">pagination</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article299'><a class="option" href="299.html" tppabs="http://www.swiper.com.cn/api/pagination/2016/0126/299.html">paginationType</a><span class="value">:<span class='hljs-string'><q>bullets</q></span></span></dd><dd class='article69'><a class="option" href="69.html" tppabs="http://www.swiper.com.cn/api/pagination/2014/1217/69.html">paginationClickable</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article71'><a class="option" href="71.html" tppabs="http://www.swiper.com.cn/api/pagination/2014/1217/71.html">paginationHide</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article280'><a class="option" href="280.html" tppabs="http://www.swiper.com.cn/api/pagination/2015/0722/280.html">paginationElement</a><span class="value">:<span class='hljs-string'><q>span</q></span></span></dd><dd class='article70'><a class="option" href="70.html" tppabs="http://www.swiper.com.cn/api/pagination/2014/1217/70.html">paginationBulletRender(index, c</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article300'><a class="option" href="300.html" tppabs="http://www.swiper.com.cn/api/pagination/2016/0126/300.html">paginationFractionRender()</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article301'><a class="option" href="301.html" tppabs="http://www.swiper.com.cn/api/pagination/2016/0126/301.html">paginationProgressRender()</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article302'><a class="option" href="302.html" tppabs="http://www.swiper.com.cn/api/pagination/2016/0126/302.html">paginationCustomRender()</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article307'><a class="option" href="307.html" tppabs="http://www.swiper.com.cn/api/pagination/2016/0219/307.html">uniqueNavElements</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd></dl>
+
+
+ <dl>
+<dt><a href="#">Navigation Buttonsï¼ˆå‰è¿›åé€€æŒ‰é’®ï¼‰</a></dt>
+<dd class='article209'><a class="option" href="209.html" tppabs="http://www.swiper.com.cn/api/Navigation_Buttons/2015/0308/209.html">nextButton</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article210'><a class="option" href="210.html" tppabs="http://www.swiper.com.cn/api/Navigation_Buttons/2015/0308/210.html">prevButton</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd></dl>
+
+  <dl>
+<dt><a href="#">Scollbarï¼ˆæ»šåŠ¨æ¡ï¼‰</a></dt>
+<dd class='article183'><a class="option" href="183.html" tppabs="http://www.swiper.com.cn/api/scrollbar/2015/0204/183.html">scrollbar</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article185'><a class="option" href="185.html" tppabs="http://www.swiper.com.cn/api/scrollbar/2015/0205/185.html">scrollbarHide</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article287'><a class="option" href="287.html" tppabs="http://www.swiper.com.cn/api/scrollbar/2015/1013/287.html">scrollbarDraggable</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article288'><a class="option" href="288.html" tppabs="http://www.swiper.com.cn/api/scrollbar/2015/1013/288.html">scrollbarSnapOnRelease</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+ 
+ 
+<dl>
+<dt><a href="#">Keyboard / Mousewheel (é¼ æ ‡ã€é”®ç›˜æ§åˆ¶é€‰é¡¹)</a></dt>
+<dd class='article65'><a class="option" href="65.html" tppabs="http://www.swiper.com.cn/api/navigation/2014/1217/65.html">keyboardControl</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article66'><a class="option" href="66.html" tppabs="http://www.swiper.com.cn/api/navigation/2014/1217/66.html">mousewheelControl</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article67'><a class="option" href="67.html" tppabs="http://www.swiper.com.cn/api/navigation/2014/1217/67.html">mousewheelForceToAxis</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article277'><a class="option" href="277.html" tppabs="http://www.swiper.com.cn/api/navigation/2015/0615/277.html">mousewheelReleaseOnEdges</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article278'><a class="option" href="278.html" tppabs="http://www.swiper.com.cn/api/navigation/2015/0615/278.html">mousewheelInvert</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article284'><a class="option" href="284.html" tppabs="http://www.swiper.com.cn/api/navigation/2015/0826/284.html">mousewheelSensitivity</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article325'><a class="option" href="325.html" tppabs="http://www.swiper.com.cn/api/navigation/2016/1106/325.html">mousewheelEventsTarged</a><span class="value">:<span class='hljs-string'><q>container</q></span></span></dd></dl>
+
+<dl>
+<dt><a href="#">Images (å›¾ç‰‡é€‰é¡¹)</a></dt>
+<dd class='article212'><a class="option" href="212.html" tppabs="http://www.swiper.com.cn/api/Images/2015/0308/212.html">preloadImages</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article31'><a class="option" href="31.html" tppabs="http://www.swiper.com.cn/api/Images/2014/1217/31.html">updateOnImagesReady</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd><dd class='article213'><a class="option" href="213.html" tppabs="http://www.swiper.com.cn/api/Images/2015/0308/213.html">lazyLoading</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article214'><a class="option" href="214.html" tppabs="http://www.swiper.com.cn/api/Images/2015/0308/214.html">lazyLoadingInPrevNext</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article297'><a class="option" href="297.html" tppabs="http://www.swiper.com.cn/api/Images/2016/0125/297.html">lazyLoadingInPrevNextAmount</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article215'><a class="option" href="215.html" tppabs="http://www.swiper.com.cn/api/Images/2015/0308/215.html">lazyLoadingOnTransitionStart</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+
+<dl>
+<dt><a href="#">Loop (ç¯è·¯)</a></dt>
+<dd class='article22'><a class="option" href="22.html" tppabs="http://www.swiper.com.cn/api/Loop/2014/1215/22.html">loop</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article23'><a class="option" href="23.html" tppabs="http://www.swiper.com.cn/api/Loop/2014/1215/23.html">loopAdditionalSlides</a><span class="value">:<span class='hljs-number'><q>0</q></span></span></dd><dd class='article25'><a class="option" href="25.html" tppabs="http://www.swiper.com.cn/api/Loop/2014/1215/25.html">loopedSlides</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd></dl>
+<dl>
+<dt><a href="#">Zoom (è°ƒç„¦)</a></dt>
+<dd class='article311'><a class="option" href="311.html" tppabs="http://www.swiper.com.cn/api/zoom/2016/1029/311.html">zoom</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article312'><a class="option" href="312.html" tppabs="http://www.swiper.com.cn/api/zoom/2016/1029/312.html">zoomMax</a><span class="value">:<span class='hljs-number'><q>3</q></span></span></dd><dd class='article313'><a class="option" href="313.html" tppabs="http://www.swiper.com.cn/api/zoom/2016/1029/313.html">zoomMin</a><span class="value">:<span class='hljs-number'><q>1</q></span></span></dd><dd class='article314'><a class="option" href="314.html" tppabs="http://www.swiper.com.cn/api/zoom/2016/1029/314.html">zoomToggle</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd></dl>
+
+
+<dl>
+<dt><a href="#">Controller (åŒå‘æ§åˆ¶)</a></dt>
+<dd class='article216'><a class="option" href="216.html" tppabs="http://www.swiper.com.cn/api/Controller/2015/0308/216.html">control</a><span class="value">:<span class='hljs-string'><q>null</q></span></span></dd><dd class='article217'><a class="option" href="217.html" tppabs="http://www.swiper.com.cn/api/Controller/2015/0308/217.html">controlInverse</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article279'><a class="option" href="279.html" tppabs="http://www.swiper.com.cn/api/Controller/2015/0722/279.html">controlBy</a><span class="value">:<span class='hljs-string'><q>slide</q></span></span></dd><dd class='article322'><a class="option" href="322.html" tppabs="http://www.swiper.com.cn/api/Controller/2016/1105/322.html">normalizeSlideIndex</a><span class="value">:<span class='hljs-literal'><q>true</q></span></span></dd></dl>
+
+
+<dl>
+<dt><a href="#">Observer ï¼ˆç›‘è§†å™¨ï¼‰</a></dt>
+<dd class='article218'><a class="option" href="218.html" tppabs="http://www.swiper.com.cn/api/Observer/2015/0308/218.html">observer</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd><dd class='article219'><a class="option" href="219.html" tppabs="http://www.swiper.com.cn/api/Observer/2015/0308/219.html">observeParents</a><span class="value">:<span class='hljs-literal'><q>false</q></span></span></dd></dl>
+
+
+<dl>
+<dt><a href="#">Callbacks ï¼ˆå›è°ƒå‡½æ•°ï¼‰</a></dt>
+<dd class='article84'><a class="option" href="84.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/84.html">onInit(swiper):function(){...}</a></dd><dd class='article87'><a class="option" href="87.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/87.html">onTouchStart(swiper, event):function(){...}</a></dd><dd class='article88'><a class="option" href="88.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/88.html">onTouchMove(swiper, event):function(){...}</a></dd><dd class='article89'><a class="option" href="89.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/89.html">onTouchEnd(swiper, event):function(){...}</a></dd><dd class='article91'><a class="option" href="91.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/91.html">onSlideChangeStart(swiper):function(){...}</a></dd><dd class='article92'><a class="option" href="92.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/92.html">onSlideChangeEnd(swiper):function(){...}</a></dd><dd class='article97'><a class="option" href="97.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/97.html">onImagesReady(swiper):function(){...}</a></dd><dd class='article220'><a class="option" href="220.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/220.html">runCallbacksOnInit:function(){...}</a></dd><dd class='article221'><a class="option" href="221.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/221.html">onTransitionStart(swiper):function(){...}</a></dd><dd class='article222'><a class="option" href="222.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/222.html">onTransitionEnd(swiper):function(){...}</a></dd><dd class='article223'><a class="option" href="223.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/223.html">onTouchMoveOpposite(swiper, eve:function(){...}</a></dd><dd class='article224'><a class="option" href="224.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/224.html">onSliderMove(swiper, event):function(){...}</a></dd><dd class='article225'><a class="option" href="225.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/225.html">onClick(swiper, event):function(){...}</a></dd><dd class='article226'><a class="option" href="226.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/226.html">onTap(swiper, event):function(){...}</a></dd><dd class='article227'><a class="option" href="227.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/227.html">onDoubleTap(swiper, event):function(){...}</a></dd><dd class='article228'><a class="option" href="228.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/228.html">onProgress(swiper, progress):function(){...}</a></dd><dd class='article229'><a class="option" href="229.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/229.html">onReachBeginning(swiper):function(){...}</a></dd><dd class='article230'><a class="option" href="230.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/230.html">onReachEnd(swiper):function(){...}</a></dd><dd class='article231'><a class="option" href="231.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/231.html">onDestroy(swiper):function(){...}</a></dd><dd class='article296'><a class="option" href="296.html" tppabs="http://www.swiper.com.cn/api/callbacks/2016/0125/296.html">onAutoplay(swiper):function(){...}</a></dd><dd class='article232'><a class="option" href="232.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/232.html">onAutoplayStart(swiper):function(){...}</a></dd><dd class='article233'><a class="option" href="233.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/233.html">onAutoplayStop(swiper):function(){...}</a></dd><dd class='article234'><a class="option" href="234.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/234.html">onLazyImageLoad(swiper, slide, :function(){...}</a></dd><dd class='article235'><a class="option" href="235.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/0308/235.html">onLazyImageReady(swiper, slide,:function(){...}</a></dd><dd class='article101'><a class="option" href="101.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/101.html">onSetTransition(swiper, transit:function(){...}</a></dd><dd class='article102'><a class="option" href="102.html" tppabs="http://www.swiper.com.cn/api/callbacks/2014/1217/102.html">onSetTranslate(swiper, translat:function(){...}</a></dd><dd class='article290'><a class="option" href="290.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/1111/290.html">onSlideNextStart(swiper):function(){...}</a></dd><dd class='article291'><a class="option" href="291.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/1111/291.html">onSlideNextEnd(swiper):function(){...}</a></dd><dd class='article292'><a class="option" href="292.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/1111/292.html">onSlidePrevStart(swiper):function(){...}</a></dd><dd class='article293'><a class="option" href="293.html" tppabs="http://www.swiper.com.cn/api/callbacks/2015/1111/293.html">onSlidePrevEnd(swiper):function(){...}</a></dd><dd class='article306'><a class="option" href="306.html" tppabs="http://www.swiper.com.cn/api/callbacks/2016/0219/306.html">onPaginationRendered(swiper, pa:function(){...}</a></dd><dd class='article326'><a class="option" href="326.html" tppabs="http://www.swiper.com.cn/api/callbacks/2016/1106/326.html">onScroll(swiper, e):function(){...}</a></dd><dd class='article345'><a class="option" href="345.html" tppabs="http://www.swiper.com.cn/api/callbacks/2017/0314/345.html">onKeyPress:function(){...}</a></dd><dd class='article346'><a class="option" href="346.html" tppabs="http://www.swiper.com.cn/api/callbacks/2017/0314/346.html">onBeforeResize(swiper):function(){...}</a></dd><dd class='article347'><a class="option" href="347.html" tppabs="http://www.swiper.com.cn/api/callbacks/2017/0314/347.html">onAfterResize(swiper):function(){...}</a></dd>
+</dl>
+
+<dl>
+<dt><a href="#">Namespace ï¼ˆå‘½åç©ºé—´ï¼‰</a></dt>
+<dd class='article72'><a class="option" href="72.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/72.html">wrapperClass</a></dd><dd class='article73'><a class="option" href="73.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/73.html">slideClass</a></dd><dd class='article74'><a class="option" href="74.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/74.html">slideActiveClass</a></dd><dd class='article75'><a class="option" href="75.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/75.html">slideVisibleClass</a></dd><dd class='article79'><a class="option" href="79.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/79.html">bulletClass</a></dd><dd class='article80'><a class="option" href="80.html" tppabs="http://www.swiper.com.cn/api/namespace/2014/1217/80.html">bulletActiveClass</a></dd><dd class='article236'><a class="option" href="236.html" tppabs="http://www.swiper.com.cn/api/namespace/2015/0308/236.html">slideDuplicateClass</a></dd><dd class='article237'><a class="option" href="237.html" tppabs="http://www.swiper.com.cn/api/namespace/2015/0308/237.html">slideNextClass</a></dd><dd class='article238'><a class="option" href="238.html" tppabs="http://www.swiper.com.cn/api/namespace/2015/0308/238.html">slidePrevClass</a></dd><dd class='article239'><a class="option" href="239.html" tppabs="http://www.swiper.com.cn/api/namespace/2015/0308/239.html">paginationHiddenClass</a></dd><dd class='article240'><a class="option" href="240.html" tppabs="http://www.swiper.com.cn/api/namespace/2015/0308/240.html">buttonDisabledClass</a></dd><dd class='article329'><a class="option" href="329.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/329.html">slideDuplicatedActiveClass</a></dd><dd class='article330'><a class="option" href="330.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/330.html">slideDuplicatedNextClass</a></dd><dd class='article331'><a class="option" href="331.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/331.html">slideDuplicatedPrevClass</a></dd><dd class='article332'><a class="option" href="332.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/332.html">containerModifierClass</a></dd><dd class='article333'><a class="option" href="333.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/333.html">lazyLoadingClass</a></dd><dd class='article334'><a class="option" href="334.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/334.html">notificationClass</a></dd><dd class='article335'><a class="option" href="335.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/335.html">paginationClickableClass</a></dd><dd class='article336'><a class="option" href="336.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/336.html">paginationModifierClass</a></dd><dd class='article337'><a class="option" href="337.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/337.html">lazyStatusLoadingClass</a></dd><dd class='article338'><a class="option" href="338.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/338.html">lazyStatusLoadedClass</a></dd><dd class='article339'><a class="option" href="339.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/339.html">lazyPreloaderClass</a></dd><dd class='article340'><a class="option" href="340.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/340.html">preloaderClass</a></dd><dd class='article341'><a class="option" href="341.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/341.html">zoomContainerClass</a></dd><dd class='article342'><a class="option" href="342.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/342.html">paginationCurrentClass</a></dd><dd class='article343'><a class="option" href="343.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/343.html">paginationTotalClass</a></dd><dd class='article344'><a class="option" href="344.html" tppabs="http://www.swiper.com.cn/api/namespace/2016/1106/344.html">paginationProgressbarClass</a></dd></dl>
+
+<dl>
+<dt><a href="#"> Properties ï¼ˆSwiperå±æ€§ï¼‰</a></dt>
+<dd class='article127'><a class="option" href="127.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/127.html">mySwiper.activeIndex</a></dd><dd class='article310'><a class="option" href="310.html" tppabs="http://www.swiper.com.cn/api/method/2016/1028/310.html">mySwiper.realIndex</a></dd><dd class='article130'><a class="option" href="130.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/130.html">mySwiper.previousIndex</a></dd><dd class='article131'><a class="option" href="131.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/131.html">mySwiper.width</a></dd><dd class='article132'><a class="option" href="132.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/132.html">mySwiper.height</a></dd><dd class='article135'><a class="option" href="135.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/135.html">mySwiper.touches</a></dd><dd class='article136'><a class="option" href="136.html" tppabs="http://www.swiper.com.cn/api/method/2014/1218/136.html">mySwiper.params</a></dd><dd class='article241'><a class="option" href="241.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/241.html">mySwiper.container</a></dd><dd class='article242'><a class="option" href="242.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/242.html">mySwiper.wrapper</a></dd><dd class='article243'><a class="option" href="243.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/243.html">mySwiper.slides</a></dd><dd class='article244'><a class="option" href="244.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/244.html">mySwiper.bullets</a></dd><dd class='article245'><a class="option" href="245.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/245.html">mySwiper.translate</a></dd><dd class='article246'><a class="option" href="246.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/246.html">mySwiper.progress</a></dd><dd class='article248'><a class="option" href="248.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/248.html">mySwiper.isBeginning</a></dd><dd class='article249'><a class="option" href="249.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/249.html">mySwiper.isEnd</a></dd><dd class='article250'><a class="option" href="250.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/250.html">mySwiper.autoplaying</a></dd><dd class='article251'><a class="option" href="251.html" tppabs="http://www.swiper.com.cn/api/method/2015/0308/251.html">mySwiper.animating</a></dd><dd class='article269'><a class="option" href="269.html" tppabs="http://www.swiper.com.cn/api/method/2015/0329/269.html">mySwiper.clickedIndex</a></dd><dd class='article270'><a class="option" href="270.html" tppabs="http://www.swiper.com.cn/api/method/2015/0329/270.html">mySwiper.clickedSlide</a></dd><dd class='article303'><a class="option" href="303.html" tppabs="http://www.swiper.com.cn/api/method/2016/0219/303.html">mySwiper.prevButton</a></dd><dd class='article304'><a class="option" href="304.html" tppabs="http://www.swiper.com.cn/api/method/2016/0219/304.html">mySwiper.nextButton</a></dd></dl>
+
+<dl>
+<dt><a href="#">Methods ï¼ˆSwiperæ–¹æ³•ï¼‰</a></dt>
+<dd class='article103'><a class="option" href="103.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/103.html">mySwiper.disableMousewheelControl()</a></dd><dd class='article104'><a class="option" href="104.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/104.html">mySwiper.enableMousewheelControl()</a></dd><dd class='article105'><a class="option" href="105.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/105.html">mySwiper.enableKeyboardControl()</a></dd><dd class='article106'><a class="option" href="106.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/106.html">mySwiper.disableKeyboardControl()</a></dd><dd class='article107'><a class="option" href="107.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/107.html">mySwiper.slideNext(runCallbacks, speed)</a></dd><dd class='article108'><a class="option" href="108.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/108.html">mySwiper.slidePrev(runCallbacks, speed)</a></dd><dd class='article109'><a class="option" href="109.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/109.html">mySwiper.slideTo(index, speed, runCallbacks)</a></dd><dd class='article111'><a class="option" href="111.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/111.html">mySwiper.startAutoplay()</a></dd><dd class='article112'><a class="option" href="112.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/112.html">mySwiper.stopAutoplay()</a></dd><dd class='article113'><a class="option" href="113.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/113.html">mySwiper.destroy(deleteInstance, cleanupStyles)</a></dd><dd class='article116'><a class="option" href="116.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/116.html">mySwiper.getWrapperTranslate()</a></dd><dd class='article117'><a class="option" href="117.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/117.html">mySwiper.setWrapperTranslate(translate)</a></dd><dd class='article149'><a class="option" href="149.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/149.html">mySwiper.removeSlide(index)</a></dd><dd class='article151'><a class="option" href="151.html" tppabs="http://www.swiper.com.cn/api/function/2014/1218/151.html">mySwiper.removeAllSlides()</a></dd><dd class='article252'><a class="option" href="252.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/252.html">mySwiper.updateContainerSize()</a></dd><dd class='article253'><a class="option" href="253.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/253.html">mySwiper.updateSlidesSize()</a></dd><dd class='article254'><a class="option" href="254.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/254.html">mySwiper.updateProgress()</a></dd><dd class='article255'><a class="option" href="255.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/255.html">mySwiper.updatePagination()</a></dd><dd class='article256'><a class="option" href="256.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/256.html">mySwiper.updateClasses()</a></dd><dd class='article257'><a class="option" href="257.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/257.html">mySwiper.update(updateTranslate)</a></dd><dd class='article258'><a class="option" href="258.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/258.html">mySwiper.onResize()</a></dd><dd class='article259'><a class="option" href="259.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/259.html">mySwiper.detachEvents()</a></dd><dd class='article260'><a class="option" href="260.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/260.html">mySwiper.attachEvents()</a></dd><dd class='article261'><a class="option" href="261.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/261.html">mySwiper.appendSlide(slides)</a></dd><dd class='article262'><a class="option" href="262.html" tppabs="http://www.swiper.com.cn/api/function/2015/0308/262.html">mySwiper.prependSlide(slides)</a></dd><dd class='article265'><a class="option" href="265.html" tppabs="http://www.swiper.com.cn/api/function/2015/0328/265.html">mySwiper.on(callback,handler)</a></dd><dd class='article266'><a class="option" href="266.html" tppabs="http://www.swiper.com.cn/api/function/2015/0328/266.html">mySwiper.once(callback,handler)</a></dd><dd class='article267'><a class="option" href="267.html" tppabs="http://www.swiper.com.cn/api/function/2015/0328/267.html">mySwiper.off(callback)</a></dd><dd class='article271'><a class="option" href="271.html" tppabs="http://www.swiper.com.cn/api/function/2015/0405/271.html">mySwiper.lockSwipes()</a></dd><dd class='article272'><a class="option" href="272.html" tppabs="http://www.swiper.com.cn/api/function/2015/0405/272.html">mySwiper.lockSwipeToNext()</a></dd><dd class='article273'><a class="option" href="273.html" tppabs="http://www.swiper.com.cn/api/function/2015/0405/273.html">mySwiper.lockSwipeToPrev()</a></dd><dd class='article305'><a class="option" href="305.html" tppabs="http://www.swiper.com.cn/api/function/2016/0219/305.html">mySwiper.reLoop()</a></dd><dd class='article315'><a class="option" href="315.html" tppabs="http://www.swiper.com.cn/api/function/2016/1029/315.html">mySwiper.disableTouchControl()</a></dd><dd class='article316'><a class="option" href="316.html" tppabs="http://www.swiper.com.cn/api/function/2016/1029/316.html">mySwiper.enableTouchControl()</a></dd><dd class='article320'><a class="option" href="320.html" tppabs="http://www.swiper.com.cn/api/function/2016/1031/320.html">mySwiper.unsetGrabCursor()</a></dd><dd class='article321'><a class="option" href="321.html" tppabs="http://www.swiper.com.cn/api/function/2016/1031/321.html">mySwiper.setGrabCursor()</a></dd>
+</dl>
+</div>
+
+</div>
+<script>
+$("#aside dt a").click(function(){
+	
+	$(this).parent().siblings("dd").toggle();
+return false;
+	})
+</script>
+
+<div id="content"><div class="api-box">
+<div class="title">
+   <h1>freeModeMomentumBounceRatio</h1>
+  </div>
+  
+
+
+  <div>å€¼è¶Šå¤§äº§ç”Ÿçš„è¾¹ç•Œåå¼¹æ•ˆæœè¶Šæ˜æ˜¾ï¼Œåå¼¹è·ç¦»è¶Šå¤§ã€‚</div>
+
+
+
+<div style='display:block;'>
+<h2>freeModeMomentumBounceRatioå‚æ•°</h2>
+<dl id="option-value">
+<dt>ç±»å‹ï¼š</dt>
+<dd>number</dd>
+<dt>é»˜è®¤ï¼š</dt>
+<dd>1</dd>
+<dt>ä¸¾ä¾‹ï¼š</dt>
+<dd>
+2
+</dd>
+
+
+
+</dl>
+</div>
+<div style='display:block;'>
+<h2>æ•ˆæœæ¼”ç¤º</h2>
+<p></p>
+<!--
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$      $$$$$$$$$$$     $$$$$$$$        $$$$$$$$         $$$$
+$$$$   $$$$   $$$$$$$   $$$   $$$$$$   $$$$   $$$$$$   $$$$$$$$$$
+$$$   $$$$$$$$$$$$$$   $$$$$   $$$$$   $$$$$   $$$$$   $$$$$$$$$$
+$$$  $$$$$$$$$$$$$$$  $$$$$$$  $$$$$   $$$$$$  $$$$$        $$$$$
+$$$   $$$$$$$$$$$$$$   $$$$$   $$$$$   $$$$$   $$$$$   $$$$$$$$$$
+$$$$   $$$$   $$$$$$$   $$$   $$$$$$   $$$$   $$$$$$   $$$$$$$$$$
+$$$$$$      $$$$$$$$$$$     $$$$$$$$        $$$$$$$$         $$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+-->
+<div class="swiper-container" id="swiper-container1" style="height:300px;">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide blue-slide">
+			slider1</div>
+		<div class="swiper-slide red-slide">
+			slider2</div>
+		<div class="swiper-slide orange-slide">
+			slider3</div>
+	</div>
+</div>
+<div class="contrast-value">
+	1</div>
+<br />
+<br />
+<div class="swiper-container" id="swiper-container2">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide blue-slide">
+			slider1</div>
+		<div class="swiper-slide red-slide">
+			slider2</div>
+		<div class="swiper-slide orange-slide">
+			slider3</div>
+	</div>
+</div>
+<div class="contrast-value">
+	5</div>
+<script language="javascript"> 
+var mySwiper = new Swiper('#swiper-container1',{
+freeMode : true,
+freeModeMomentumBounceRatio : 1,
+})
+var mySwiper2 = new Swiper('#swiper-container2',{
+freeMode : true,
+freeModeMomentumBounceRatio : 5,
+})
+</script>
+<!--
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$      $$$$$$$$$$$     $$$$$$$$        $$$$$$$$         $$$$
+$$$$   $$$$   $$$$$$$   $$$   $$$$$$   $$$$   $$$$$$   $$$$$$$$$$
+$$$   $$$$$$$$$$$$$$   $$$$$   $$$$$   $$$$$   $$$$$   $$$$$$$$$$
+$$$  $$$$$$$$$$$$$$$  $$$$$$$  $$$$$   $$$$$$  $$$$$        $$$$$
+$$$   $$$$$$$$$$$$$$   $$$$$   $$$$$   $$$$$   $$$$$   $$$$$$$$$$
+$$$$   $$$$   $$$$$$$   $$$   $$$$$$   $$$$   $$$$$$   $$$$$$$$$$
+$$$$$$      $$$$$$$$$$$     $$$$$$$$        $$$$$$$$         $$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+-->
+
+</div>
+<h2>ä½¿ç”¨æ–¹æ³•ç¤ºä¾‹</h2>
+<pre  class="code"><code>&lt;script language=&quot;javascript&quot;&gt; 
+var mySwiper = new Swiper('.swiper-container',{
+freeMode : true,
+freeModeMomentumBounceRatio : 5,
+})
+&lt;/script&gt;</code></pre>
+
+<div class="api-google-ad">
+<script async src="adsbygoogle.js" tppabs="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728*90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8527457878009645"
+     data-ad-slot="4600199810"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+<div id="share-and-digg">
+<a href="javascript:if(confirm('http://bbs.swiper.com.cn/forum.php?mod=forumdisplay&fid=50  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://bbs.swiper.com.cn/forum.php?mod=forumdisplay&fid=50'" tppabs="http://bbs.swiper.com.cn/forum.php?mod=forumdisplay&fid=50" id="findMistake" target="_blank">çº æ­£</a>
+<span onclick="showReward()" class="reward-btn">æ‰“èµ</span>
+<div id="reward">
+<div class="center"><span class="close">å…³é—­</span>
+<p class="reward-title">å¾®ä¿¡æ‰«ä¸€æ‰«æ‰“èµæˆ‘ä»¬</p>
+<p class="reward-img"><img src="reward88.png" tppabs="http://www.swiper.com.cn/templets/default/images/reward88.png" ><br>
+8.8å…ƒ
+</p>
+
+</div>
+</div>
+<script>
+$("#contrast a").click(function(){
+$("#contrast a").removeClass('default');
+$(this).addClass('default');
+return false;
+  });
+$(".article49").addClass('active');
+$(".article49").parent().find("dd").addClass('show');
+$(".article49").parent().find("dt").addClass('active');
+
+$('#reward').click(function(){
+	hideReward();
+})
+$('#reward .close').click(function(){
+	hideReward();
+})
+ $("#reward .center").click(function(e){
+e.stopPropagation();
+  });
+function showReward(){
+	$('#reward').show();
+	}
+function hideReward(){
+	$('#reward').hide();
+	}	
+</script>
+
+
+
+
+<!-- //é¡¶è¸© -->
+			<div class="newdigg" id="newdigg">
+				<div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',49)">
+					<div class="digg_act">ç»™åŠ›</div>
+					<div class="digg_num">(11)</div>
+				</div>
+				<div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',49)">
+					<div class="digg_act">ä¸ç»™åŠ›</div>
+					<div class="digg_num">(3)</div>
+				</div>
+                
+			</div>
+			<!-- //é¡¶è¸©éƒ¨ä»½çš„æºç ç»“æŸ -->
+            
+           
+</div>
+
+
+
+<div class="original">
+<p>è½¬è½½åŸåˆ›æ–‡ç« è¯·æ³¨æ˜ï¼šæ–‡ç« è½¬è½½è‡ªï¼š<strong>Swiperä¸­æ–‡ç½‘</strong> [<a href="javascript:if(confirm('http://www.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/'" tppabs="http://www.swiper.com.cn/">http://www.swiper.com.cn</a>]<br>
+æœ¬æ–‡åœ°å€ï¼š<a href="49.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/49.html">http://www.swiper.com.cn/api/freemode/2014/1217/49.html</a><br></p>
+</div>
+<div class="page-nav">
+<a class="pre" href="48.html" tppabs="http://www.swiper.com.cn/api/freemode/2014/1217/48.html">ä¸Šä¸€ç¯‡ï¼šfreeModeMomentumBounce</a><a class="next" href="276.html" tppabs="http://www.swiper.com.cn/api/freemode/2015/0506/276.html">ä¸‹ä¸€ç¯‡ï¼šfreeModeSticky</a> 
+</div>
+<br><br>
+<!--<div id="freq-question">
+<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1935" target="_blank">
+data-backgroundæ€ä¹ˆç”¨çš„</a> <span class="time">(2017-04-18)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1852" target="_blank">
+è¿™ä¸ªäº¤æµå¥½å†·æ¸…ï¼Œæ²¡äººç®¡æ²¡äººé—®ï¼</a> <span class="time">(2017-03-21)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1851" target="_blank">
+swiperåŒä¸€ä¸ªé¡µé¢å¼•ç”¨å¤šä¸ªï¼Œæ€ä¹ˆåˆ†å¼€æ§åˆ¶</a> <span class="time">(2017-03-21)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1670" target="_blank">
+slidesPerView : 'auto',è®¾ç½®é—®é¢˜</a> <span class="time">(2017-01-06)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1662" target="_blank">
+æ¨¡æ¿æ ‡ç­¾å¾ªç¯ä¼šå¯¼è‡´swiperçš„loopå¤±æ•ˆï¼Œæ±‚åŠ©</a> <span class="time">(2017-01-04)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1661" target="_blank">
+æ¨¡æ¿æ ‡ç­¾å¾ªç¯ä¼šå¯¼è‡´swiperçš„loopå¤±æ•ˆï¼Œæ±‚åŠ©</a> <span class="time">(2017-01-04)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1642" target="_blank">
+swiperåœ¨tableä¸­ä½¿ç”¨å®½åº¦å¼‚å¸¸ æš‚æœªæ‰¾åˆ°è§£å†³åŠæ³•</a> <span class="time">(2016-12-28)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1639" target="_blank">
+è¿™æ ·å¥½åƒå®ç°ä¸äº†</a> <span class="time">(2016-12-28)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1632" target="_blank">
+å…³äºswiperä¸­lå‚æ•°loopåˆ‡æ¢bug</a> <span class="time">(2016-12-26)</span>
+<br/><a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1616" target="_blank">
+ios10 ä½¿ç”¨swiper speedå‚æ•°æ— ç”¨</a> <span class="time">(2016-12-21)</span>
+<br/>
+</div>-->
+<div id="member-help">
+<h2><span>ç½‘å‹æ±‚åŠ©<i></i></span></h2>
+<ul id="member-help-list"></ul>
+</div>
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"  data-thread-key="49" data-author-key="1"  data-url="http://www.swiper.com.cn/api/freemode/2014/1217/49.html" data-title="freeModeMomentumBounceRatio"></div>
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name: "swiper3"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'embed.js'/*tpa=http://static.duoshuo.com/embed.js*/;
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END --><div id="ds-ssr" class="mt1">
+	<dl class="tbox">
+		<dt> <strong>è¯„è®ºåˆ—è¡¨ï¼ˆç½‘å‹è¯„è®ºä»…ä¾›ç½‘å‹è¡¨è¾¾ä¸ªäººçœ‹æ³•ï¼Œå¹¶ä¸è¡¨æ˜æœ¬ç«™åŒæ„å…¶è§‚ç‚¹æˆ–è¯å®å…¶æè¿°ï¼‰</strong> </dt>
+		<dd>
+			<div class="dede_comment">
+				<div class="decmt-box1">
+					<ul>
+						<li id="commetcontentNew"></li>
+
+ 
+					</ul>
+				</div>
+			</div>
+		</dd>
+	</dl>
+</div>
+
+
+
+</div></div><!--content-->
+
+
+
+<!--<div id="api-ad">
+<div class="box">
+<a href="http://bbs.swiper.com.cn/demo/share/" target="_blank"><img src="/templets/default/images/share.png" width="200" /></a>
+</div>
+</div>-->
+
+
+
+
+</div>
+</div>
+<script language="javascript" type="text/javascript" src="dedeajax2.js" tppabs="http://www.swiper.com.cn/include/dedeajax2.js"></script>
+<script language="javascript">
+
+
+
+
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) {  return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+}
+getDigg(49);
+
+$.ajax({url:"http://www.swiper.com.cn/plus/list.php?tid=45",async:true,success:function(obj){
+	$("#member-help-list").html(obj);
+	$("#member-help").show();
+	}
+})
+
+// htmlobj=$.ajax({url:"http://www.swiper.com.cn/plus/list.php?tid=45",async:false});
+//  $("#member-help-list").html(htmlobj.responseText);
+//  $("#member-help").show();
+</script>
+
+<div id="footer">
+  <div class="inner">
+  <dl class="link">
+  <dt>ç½‘ç«™åœ°å›¾</dt>
+  <dd><a href="javascript:if(confirm('http://swiper3.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://swiper3.swiper.com.cn/'" tppabs="http://swiper3.swiper.com.cn/">Swiper3ä¸­æ–‡ç½‘</a></dd>
+  <dd><a href="javascript:if(confirm('http://swiper2.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://swiper2.swiper.com.cn/'" tppabs="http://swiper2.swiper.com.cn/">Swiper2ä¸­æ–‡ç½‘</a></dd>
+  <dd><a href="javascript:if(confirm('http://bbs.swiper.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://bbs.swiper.com.cn/'" tppabs="http://bbs.swiper.com.cn/">Swiperèµ„æºÂ·äº¤æµ</a></dd>
+  <dd><a href="javascript:if(confirm('http://www.swiper.com.cn/about/contact  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/contact'" tppabs="http://www.swiper.com.cn/about/contact">è”ç³»æˆ‘ä»¬ </a></dd>
+  <dd><a href="javascript:if(confirm('http://www.swiper.com.cn/about/us/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/us/index.html'" tppabs="http://www.swiper.com.cn/about/us/index.html">å…³äºSwiper</a></dd>
+  <dd><a href="javascript:if(confirm('http://www.swiper.com.cn/demo/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/demo/index.html'" tppabs="http://www.swiper.com.cn/demo/index.html">Swiperåœ¨çº¿æ¼”ç¤º</a></dd>
+  </dl>
+  <dl class="link">
+  <dt>å‹æƒ…é“¾æ¥</dt>
+   <dd><a href="javascript:if(confirm('http://www.daigouwan.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.daigouwan.com/'" tppabs="http://www.daigouwan.com/" target="_blank" date="2017-8-18">æ—¥æœ¬é›…è™ä»£æ‹</a></dd> 
+ 
+  <dd><a href="javascript:if(confirm('http://www.yijingmoney.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.yijingmoney.com/'" tppabs="http://www.yijingmoney.com/" target="_blank" date="2017-05-17">è§†é¢‘è¥é”€</a></dd>
+  <dd><a href="javascript:if(confirm('http://www.projet-cn.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.projet-cn.com/'" tppabs="http://www.projet-cn.com/" target="_blank" date="2017-05-07">å–·ç æœº</a></dd>
+   <dd><a href="javascript:if(confirm('http://www.nmgf88.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.nmgf88.com/'" tppabs="http://www.nmgf88.com/" target="_blank" date="2017-08-07">æŸ æª¬å·¥åŠåŠ ç›Ÿè´¹å¤šå°‘</a></dd>
+  
+    <dd><a href="javascript:if(confirm('http://www.15jc.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.15jc.com/'" tppabs="http://www.15jc.com/" target="_blank" date="2017-5-4">15æ•™ç¨‹ç½‘</a></dd>
+  
+   <dd><a href="javascript:if(confirm('http://www.ztdiaocha.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.ztdiaocha.com/'" tppabs="http://www.ztdiaocha.com/" target="_blank" date="2017-05-3">ä¸Šæµ·ç§å®¶ä¾¦æ¢</a></dd>
+  
+  <dd><a href="javascript:if(confirm('http://www.afcpa.com.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.afcpa.com.cn/'" tppabs="http://www.afcpa.com.cn/" target="_blank" date="2017.5.1">è´¢åŠ¡ç®¡ç†å¸ˆ</a></dd>
+<dd><a href="javascript:if(confirm('http://www.665zt.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.665zt.cn/'" tppabs="http://www.665zt.cn/" target="_blank" date="2017.5.1">å¾é€”ç§æœ</a></dd>  
+ <dd><a href="javascript:if(confirm('http://www.9416.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.9416.cn/'" tppabs="http://www.9416.cn/" target="_blank" date="2017.5.1">ä¹‰ä¹Œç½‘ç«™å»ºè®¾</a></dd>  
+   <dd><a href="javascript:if(confirm('http://www.yunwangke168.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.yunwangke168.com/'" tppabs="http://www.yunwangke168.com/" target="_blank" date="2017.4.31">äº‘ç½‘å®¢</a></dd>
+  
+<dd><a href="javascript:if(confirm('http://www.vshechi.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.vshechi.com/'" tppabs="http://www.vshechi.com/" target="_blank" date="2017-04-28">äºŒæ‰‹æŸ´æ²¹å‘ç”µæœº</a></dd>   
+
+ 
+  
+  
+ 
+
+ 
+ 
+<!--<dd class="buy"><a href="#" target="_blank" onclick="javascript:window.open('https://item.taobao.com/item.htm?id=542872801127');return false;">è´­ä¹°å‹æƒ…é“¾æ¥</a></dd>-->
+  </dl>
+   <dl>
+  <dt>è‡´è¾</dt>
+  <dd>æ„Ÿè°¢idangeroåˆ›é€ çš„ç§»åŠ¨ç«¯è§¦æ‘¸æ»‘åŠ¨æ’ä»¶Swiperå¸¦ç»™æˆ‘ä»¬çš„æ— é™ç²¾å½©ã€‚</dd>
+  </dl>
+ <dl class="link">
+  <dt>åˆä½œä¼™ä¼´<a href="javascript:if(confirm('http://www.swiper.com.cn/about/link/index.html  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.swiper.com.cn/about/link/index.html'" tppabs="http://www.swiper.com.cn/about/link/index.html" style="float:right; font-size:12px; margin-top:5px;">æ›´å¤šåˆä½œä¼™ä¼´></a></dt>
+   <dd><a href="javascript:if(confirm('http://www.huoyuandl.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.huoyuandl.com/'" tppabs="http://www.huoyuandl.com/" target="_blank">å¾®å•†è´§æºç½‘</a></dd> 
+  
+<dd><a href="javascript:if(confirm('http://www.aikaitao.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.aikaitao.com/'" tppabs="http://www.aikaitao.com/" target="_blank">æ€ä¹ˆå¼€ä¸ªæ·˜å®ç½‘åº—</a></dd>
+
+  <dd><a href="javascript:if(confirm('http://www.jkwxw.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.jkwxw.com/'" tppabs="http://www.jkwxw.com/" target="_blank">è”ç½‘æŠ¥è­¦</a></dd> 
+ <dd><a href="javascript:if(confirm('http://www.yufeishengda.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.yufeishengda.com/'" tppabs="http://www.yufeishengda.com/" target="_blank">å®éªŒå®¤è§„åˆ’</a></dd>  
+  <dd><a href="javascript:if(confirm('http://www.5aihao.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.5aihao.com/'" tppabs="http://www.5aihao.com/" target="_blank">éƒ½å¸‚è¶…çº§åŒ»åœ£</a></dd>
+  
+ <dd><a href="javascript:if(confirm('http://www.zqt888.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.zqt888.cn/'" tppabs="http://www.zqt888.cn/" target="_blank" >ä¸Šæµ·è¯åˆ¸é€š</a></dd>
+   <dd><a href="javascript:if(confirm('http://www.webqp.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.webqp.cn/'" tppabs="http://www.webqp.cn/" target="_blank">æ£‹ç‰Œæ¸¸æˆå¼€å‘</a></dd>
+  <dd><a href="javascript:if(confirm('http://www.soupv.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.soupv.cn/'" tppabs="http://www.soupv.cn/" target="_blank">vrèµ„æº</a></dd>
+   
+     <dd><a href="javascript:if(confirm('http://www.jsjk88.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.jsjk88.com/'" tppabs="http://www.jsjk88.com/" target="_blank" >å‹åŠ›å˜é€å™¨</a></dd>
+<dd><a href="javascript:if(confirm('http://www.jkyb.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.jkyb.com/'" tppabs="http://www.jkyb.com/" target="_blank" >æ— çº¸è®°å½•ä»ª</a></dd>
+
+ <dd><a href="javascript:if(confirm('http://www.hcharts.cn/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.hcharts.cn/'" tppabs="http://www.hcharts.cn/" target="_blank">Highchartsä¸­æ–‡ç½‘</a></dd>
+  <dd><a href="javascript:if(confirm('http://www.lanrenzhijia.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.lanrenzhijia.com/'" tppabs="http://www.lanrenzhijia.com/" target="_blank">jqueryç‰¹æ•ˆ</a></dd>  
+  </dl> 
+  
+  <div id="copyright">
+  Copyright Â© 2015 Swiperä¸­æ–‡ç½‘,<a href="#" style="color:inherit; text-decoration:none;" onclick="javascript:window.open('http://www.miitbeian.gov.cn/');return false;">ç²¤ICPå¤‡15001020å·</a>, All Rights Reservedã€‚  </div>
+  
+  </div>
+</div>
+<script language="javascript">
+function display(li){    
+li.className='sub active';
+var subdis=li.getElementsByTagName("ul")[0];    
+subdis.style.display="block";    
+}
+function ndisplay(li){ 
+li.className='sub noactive';   
+var subdis=li.getElementsByTagName("ul")[0];        
+subdis.style.display="None";    
+}
+var preBtn=document.querySelectorAll('.pre-btn');
+for (var j=0; j<preBtn.length; j++) {
+preBtn[j].onclick = function(){
+	this.style.display='none';
+	this.parentNode.querySelector('.pre-load').style.display='none';
+	myframe=this.parentNode.querySelector('iframe');
+	framesrc=myframe.attributes["data-src"].value;
+	myframe.setAttribute("src",framesrc);
+}
+}
+
+</script>
+
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6387fcb06c7f33ad6787ab913d4e6d10' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<div>
+
+</body>
+</html>

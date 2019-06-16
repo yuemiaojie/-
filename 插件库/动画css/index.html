@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="animate.min.css" type="text/css"/>
+        <style>
+			.myBox{
+				width:300px;
+				height:100px;
+				
+				text-align:center;
+				line-height:100px;
+				font-size:100px;
+				color:red;
+				font-family:"微软雅黑";
+
+				margin:100px auto;
+				margin-bottom:0;
+			}
+
+			*{margin: 0;padding: 0;list-style:none;}
+			ul{				
+				overflow:hidden;
+				margin:20px auto;
+				border: 1px solid #000;
+			}
+			ul li{float:left;
+				font:20px/30px "微软雅黑";
+				
+				margin-right:10px;
+				padding:0px 5px;
+				background:pink;
+				margin-bottom:10px;
+				cursor: pointer;
+			}
+        </style>
+        <script>
+	        window.onload=function(){
+	        	var ls=document.getElementsByTagName('li');
+	        	var box=document.getElementById('myBox');
+
+	        	for(var i=0; i<ls.length;i++){
+	        		console.log(ls[i].innerHTML);
+
+	        		ls[i].onclick=function(){
+	        			box.className="myBox animated "+this.innerHTML;
+	        		}
+	        	}
+	        }
+        </script>
+    </head>
+    <body>
+		<div class="myBox animated bounce" id="myBox">TEST</div>
+		<ul>
+			<li>bounce</li>
+			<li>flash</li>
+			<li>pulse</li>
+			<li>rubberBand</li>
+			<li>shake</li>
+			<li>swing</li>
+			<li>tada</li>
+			<li>wobble</li>
+			<li>jello</li>
+		</ul>
+		<ul>
+			<li>bounceIn</li>
+			<li>bounceInDown</li>
+			<li>bounceInLeft</li>
+			<li>bounceInRight</li>
+			<li>bounceInUp</li>
+			<li>bounceOut</li>
+			<li>bounceOutDown</li>
+			<li>bounceOutLeft</li>
+			<li>bounceOutRight</li>
+			<li>bounceOutUp</li>
+		</ul>
+			
+		<ul>			
+			<li>fadeIn</li>
+			<li>fadeInDown</li>
+			<li>fadeInDownBig</li>
+			<li>fadeInLeft</li>
+			<li>fadeInLeftBig</li>
+			<li>fadeInRight</li>
+			<li>fadeInRightBig</li>
+			<li>fadeInUp</li>
+			<li>fadeInUpBig</li>
+		</ul>
+			
+		<ul>
+			<li>fadeOut</li>
+			<li>fadeOutDown</li>
+			<li>fadeOutDownBig</li>
+			<li>fadeOutLeft</li>
+			<li>fadeOutLeftBig</li>
+			<li>fadeOutRight</li>
+			<li>fadeOutRightBig</li>
+			<li>fadeOutUp</li>
+			<li>fadeOutUpBig</li>			
+		</ul>
+			
+		<ul>
+			<li>flipInX</li>
+			<li>flipInY</li>
+			<li>flipOutX</li>
+			<li>flipOutY</li>
+			<li>lightSpeedIn</li>
+			<li>lightSpeedOut</li>
+		</ul>
+			
+		<ul>
+			<li>rotateIn</li>
+			<li>rotateInDownLeft</li>
+			<li>rotateInDownRight</li>
+			<li>rotateInUpLeft</li>
+			<li>rotateInUpRight</li>
+			<li>rotateOut</li>
+			<li>rotateOutDownLeft</li>
+			<li>rotateOutDownRight</li>
+			<li>rotateOutUpLeft</li>
+			<li>rotateOutUpRight</li>
+			<li>hinge</li>
+			<li>rollIn</li>
+			<li>rollOut</li>
+		</ul>
+		<ul>
+			<li>zoomIn</li>
+			<li>zoomInDown</li>
+			<li>zoomInLeft</li>
+			<li>zoomInRight</li>
+			<li>zoomInUp</li>
+			<li>zoomOut</li>
+			<li>zoomOutDown</li>
+			<li>zoomOutLeft</li>
+			<li>zoomOutRight</li>
+			<li>zoomOutUp</li>
+
+		</ul>
+
+			
+		<ul>
+			<li>slideInDown</li>
+			<li>slideInLeft</li>
+			<li>slideInRight</li>
+			<li>slideInUp</li>
+			<li>slideOutDown</li>
+			<li>slideOutLeft</li>
+			<li>slideOutRight</li>
+			<li>slideOutUp</li>			
+		</ul>
+
+    </body>
+</html>
+
+
+

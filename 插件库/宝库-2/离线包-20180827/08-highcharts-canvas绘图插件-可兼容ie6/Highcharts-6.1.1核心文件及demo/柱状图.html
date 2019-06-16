@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>  
+    <div id="container" style="width: 600px;height:400px; border: 1px solid #000;"></div>
+
+  
+    <script src="highcharts.js"></script>
+        
+    <!--[if lt IE 9]>
+           <script src="oldie.js"></script> 
+    <![endif]-->
+
+
+    <script>
+            // 图表配置
+            var options = {
+                chart: {
+                    type: 'column'                          //指定图表的类型，默认是折线图（line）
+                },
+                title: {
+                    text: '吃水果数据'                 // 标题
+                },
+                xAxis: {
+                    categories: ['苹果', '香蕉', '橙子']   // x 轴分类
+                },
+                yAxis: {
+                    title: {
+                        text: '吃水果个数'                // y 轴标题
+                    }
+                },
+                series: [{                              // 数据列
+                    name: '春哥',                        // 数据列名
+                    data: [1, 2, 4]                     // 数据
+                }, {
+                    name: '方玮',
+                    data: [5, 7, 3]
+                }]
+            };
+            // 图表初始化函数
+            var chart = Highcharts.chart('container', options);
+        </script>
+</body>
+</html>

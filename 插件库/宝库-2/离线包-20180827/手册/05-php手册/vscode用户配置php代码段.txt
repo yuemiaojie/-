@@ -1,0 +1,7 @@
+{
+    "editor.tabSize": 2,
+    "files.autoSave": "off",
+    "window.zoomLevel": 1,
+    // 需要配置 php 可执行文件目录
+    "php.validate.executablePath": "D:\\phpStudy\\php\\php-5.4.45\\php.exe"
+}

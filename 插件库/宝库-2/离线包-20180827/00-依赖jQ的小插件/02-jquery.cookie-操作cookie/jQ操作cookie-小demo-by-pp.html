@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <script src="./jquery-1.12.2.js"></script>
+  <script src="./jquery.cookie.js"></script>
+  <script>
+    
+    // cookie 可以多个页面共享
+    // 通过 插件, jquery.cookie.js 可以辅助我们操作 cookie
+
+    // 1. 设置 cookie:  $.cookie(key, value)
+    // $.cookie( "name", "dapp" );
+    // $.cookie("age", 18);
+
+    // 2. 获取:  $.cookie(key)
+    // console.log( $.cookie( "name" ) ); 
+
+    // 3. 删除: $.removeCookie( key )
+    // $.removeCookie( "age" );
+
+    // 4. 过期时间, 如果不设置过期时间, 默认 cookie 是会话级别的, 关闭浏览器, 就会被销毁
+    //    $.cookie( key, value, { expires: 过期天数 } );
+    // $.cookie( "name", "pengpeng" );
+    // $.cookie( "name", "pengpeng", { expires: 7 });
+
+  
+  
+  </script>
+
+
+  
+</body>
+</html>
