@@ -1328,6 +1328,22 @@ fastclick.js 解决移动端300ms的延迟
 - Array.form([1, 2, 3])
 - Array.prototype.slice.call([1, 2, 3])
 
+```js
+  Array.form
+  console.log(Array.from('foo'));
+  // expected output: Array ["f", "o", "o"]
+  
+  // 第二个参数：生成的数组为处理后的数组 x => 对应的值
+  console.log(Array.from([1, 2, 3], x => x + x));
+  // expected output: Array [2, 4, 6]
+  
+  // 获取字符串的长度
+  Array.form(string).length
+  
+  // 控制函数的执行次数
+  Array.form({length: 3}, _ => { console.log('我要执行3次！！！') })
+```
+
 ## 修改选中文字后样式
 
 ```js
@@ -1476,16 +1492,18 @@ $.box($代表父class)
 
 ```js
   .box {
-     /*! autoprefixer: ignore next */
-    -webkit-box-orient: vertical;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
   }
 ```
 
 ## 解析http网站
 
 ```js
+  var str = '这是一个很好玩的网站：https://www.baidu.com哈哈哈'
   var reg = /(https?|http):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g;
-  var urls = str.match(reg);
+  var urls = str.match(reg); // urls -> https://www.baidu.com
   for (const key in urls) {
     if (urls.hasOwnProperty(key)) {
       const url = urls[key]
@@ -1734,6 +1752,8 @@ typeof Promise !== 'undefined' && isNative(Promise)
 
  ##  arguments对象的使用
 
+ > 注意：箭头函数没有arguments，arguments是一个伪数组（Array.form(arguments)）
+
 ```js
   function arguments(n, b) {
     console.log(arguments[0], arguments[1])
@@ -1816,6 +1836,149 @@ nginx代码
 ```js
 $.extend({})
 ```
-## git简写配置
+## git简写配置  
 
 - [git简写配置](https://www.cnblogs.com/mamaguai/p/8081826.html)
+
+## css的:not
+
+```js
+  // 类名不为fancy的p标签
+  p:not(.fancy) {}
+  // body下面不为p标签
+  body :not(p) {}
+  // body下不为div与span
+  body :not(div):not(span) {}
+```
+## font-weight的问题
+
+> 当我们发现设置`font-weight: 400 | 700`都不符合我们审美时，可以适当的设置`font-size: *%`查看
+
+## h5的cookie操作
+
+- [cookie操作](https://www.cnblogs.com/jf-67/p/9096911.html)
+
+## vue的provide/inject
+
+> 解决深层的组件嵌套问题
+- [讲解使用](https://blog.csdn.net/Garrettzxd/article/details/81407199)
+
+## 图片懒加载(利用了函数节流技术)
+
+- [](https://blog.csdn.net/lost_wen/article/details/62416521)
+
+## nodeVPN
+
+> 作用：在公用网络上设置专有网络（fanQiang）
+> 使用：打开后设置为混淆模式，点击下面国家进行连接
+> 技巧：1.尝试多连接几个国家，数字越大说明这个服务器刚出来 2.打开软件帮助中心，搜索china点击下方索引，官方就有推荐的服务点
+
+## jsbridge使用
+
+> 说明：jsbridge用于java（安卓）与H5功能数据的互调 (https://www.jianshu.com/p/c80ceb1ff417?from=groupmessage)
+
+```js
+ // 当然，在vue中注册的事件都是在组件中注册的，没有绑定至window中，所以我们要将指定的方法绑定至window中
+ mounted() {
+   window['fn'] = () => {
+     this.fn1()
+   }
+ },
+ methods: {
+   fn1() {
+     // to do something
+   }
+ }
+```
+
+## stylus预编译
+
+> 省略括号的css预处理器
+> 不需要添加return...
+
+## ++i与i++
+
+> 注意：当变量运算时，会有区别
+
+```js
+// 相同点
+++a 与 a++ 
+for(i = 0; i < 100; i++) { a++ }
+for(i = 0; i < 100; i++) { ++a }
+// 不同点
+i = 0;
+if(i++ < 10) {} // 这时i先比较，在i++ -> 1
+if(++i < 10) {} // 这时i先+1
+
+a = i++; // a = 0; i = 1;
+a = ++i; // a = 1; i = 1;
+```
+
+## 判断元素是否为undefined与null
+
+```js
+  // 注意：只有这种情况下使用双等于
+  if(obj == null) {  }
+```
+
+## $.get与$.post
+
+> 一般用于简单的请求实列
+
+```js
+  $.post('url', data: 'params', function(data, status) {}, dataType: 'JSON')
+```
+
+## flat()与flatMap()
+
+> flat: 拉平数组
+> flatMap: 展开一层，获取新数组
+
+```js
+  var arr = [1, , 2, 3];
+  arr.flat() // [1, 2, 3]
+
+  arr = [1, [1, 2], 2];
+
+  arr.flat() // [1, 1, 2, 2];
+  arr = [1, [1, 1, [1, 2]], 1];
+  // 拉平为一维数组
+  arr.flat(Infinity) // [1, 1, 1, 1, 2, 1]
+```
+
+## 获取数组符合位置的下标
+
+```js
+  arr.findIndex(v => {})
+```
+
+## 获取系统占用的端口号
+
+`netstat -an`
+如果出现不是外部命令，是因为你当时不在系统文件中，输入`cd c:\WINDOWS\system32\`切换至系统文件中
+
+## 获取某个链接是否可以正常链接
+
+`ping 端口号`
+
+## 兼容IE的css3，与h5标签的插件
+
+`
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+`
+
+## vsCode快捷键
+
+- Shift + Ctrl + f (搜索)
+- Ctrl + o (打开当前的文件夹)
+- Ctrl + e (打开最近打开的文件列表)
+- Ctrl + h (替换代码)
+
+## 直播格式
+
+- [](https://www.cnblogs.com/qianduantuanzhang/p/7795044.html)
