@@ -1982,3 +1982,37 @@ a = ++i; // a = 1; i = 1;
 ## 直播格式
 
 - [](https://www.cnblogs.com/qianduantuanzhang/p/7795044.html)
+
+## vue实现WebSocket
+
+- [](https://www.cnblogs.com/qisi007/p/10213886.html)
+
+## normalize.css
+
+1. 保护了浏览器有价值的默认属性
+2. 对不同浏览器进行了一般化
+3. 优化了部分css的BUG
+
+- [](https://www.cnblogs.com/zhibu/p/5176838.html)
+
+## 兼容ES6的插件
+
+`<script type="text/javascript" src ="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>`
+- 支持promise，箭头函数...
+
+## vue实现直播功能
+
+- [](https://www.jianshu.com/p/a045f3bacb6f)
+
+## ES6语法
+
+1. Number.isFinite() 是否为有限循环
+2. Number.isNaN() 是否为NaN
+3. Number.parseInt(12.1) 转为数字 12 
+4. Number.parseFloat(12.12￥) 转为数字 12.12
+5. Number.isInterger() 是否为整数
+6. Math.trunc(1.1) 转整数（移除小数点后面）   返回整数 Math.trunc(true) 1 false -> false
+7. Math.sign(-1) -1   Math.sign(1) 1   Math.sign(0) +0 对于非数字先转数字
+8. 指数运算符 2 ** 2 -> 2 * 2   |    2 ** 3 -> 2 * 2 * 2  
+
+[](https://blog.csdn.net/qq_38718629/article/details/96994747)
