@@ -2016,3 +2016,12 @@ a = ++i; // a = 1; i = 1;
 8. 指数运算符 2 ** 2 -> 2 * 2   |    2 ** 3 -> 2 * 2 * 2  
 
 [](https://blog.csdn.net/qq_38718629/article/details/96994747)
+
+## 宏任务与微任务
+
+1. JS异步分为宏任务与微任务，先执行宏，在执行微，然而先拿微，后拿宏
+2. script，setTimeOut: 宏  Promise,process.nextTick:微 
+
+process.nextTick：Node.js技术
+
+[](https://blog.csdn.net/lc237423551/article/details/79902106)
